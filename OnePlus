@@ -1,0 +1,11 @@
+def onePlus(oldList):
+    newList = oldList
+    if oldList[-1] < 9 :
+        oldList[-1] += 1
+    elif oldList[-1] >= 9:
+        oldList[-1] += 1 
+        strNum = str(oldList[-1])
+        newList.pop()
+        for num in strNum:
+            newList.append(int(num))
+    return newList
